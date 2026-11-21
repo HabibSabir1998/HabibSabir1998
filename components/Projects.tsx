@@ -1,6 +1,6 @@
 "use client";
 
-import { projects } from "@/data";
+import { projects, mobileApps } from "@/data";
 import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 import Reveal from "./ui/Reveal";
 
@@ -16,6 +16,22 @@ const Projects = () => {
       </Reveal>
       <BentoGrid className="w-full py-20">
         {projects.map((item, i) => (
+          <BentoGridItem
+            key={item.id}
+            {...item}
+          />
+        ))}
+      </BentoGrid>
+
+      <Reveal>
+        <h3>
+          Mobile{" "}
+          <span className="bg-gradient-to-r from-purple to-red-700 bg-clip-text text-transparent">
+            apps.</span>
+        </h3>
+      </Reveal>
+      <BentoGrid className="w-full py-20 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
+        {mobileApps.map((item) => (
           <BentoGridItem
             key={item.id}
             {...item}

@@ -12,7 +12,7 @@ const Experience = (): JSX.Element => (
     </h3>
 
     <div className="w-full mt-12 space-y-10">
-      {workExperience.map(({ id, company, title, period, location, desc, skills }) => (
+      {workExperience.map(({ id, company, title, period, location, achievements, skills }) => (
         <Sparkle key={id} duration={Math.floor(Math.random() * 10000) + 10000}>
           <div className="p-3 md:p-5 lg:p-10">
             <div className="text-start">
@@ -31,7 +31,11 @@ const Experience = (): JSX.Element => (
                   <p>{location}</p>
                 </div></div>
 
-              <p className="my-5">{desc}</p>
+              <ul className="my-5 list-disc pl-5 space-y-2">
+                {achievements.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
 
               <div className="flex flex-wrap gap-2 mt-10">
                 {skills.map((skill) => (

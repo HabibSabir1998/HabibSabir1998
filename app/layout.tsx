@@ -22,22 +22,21 @@ export default function RootLayout({
 }
 
 
-// Change this data with your own 🤭
 export const metadata: Metadata = {
   title: {
-    default: 'Atzin Escandia ✷ Portfolio',
-    template: '%s - Atzin Escandia',
+    default: 'Habib Muhammad Sabir ✷ Senior Full Stack Engineer',
+    template: '%s - Habib Muhammad Sabir',
   },
   description:
-    'A customizable portfolio template for frontend developers, created by Atzin Escandia. Showcase your skills, projects, and experience with a clean and modern design.',
+    'Habib Muhammad Sabir — Senior Full Stack Engineer with 7+ years building React/Next.js web apps, Node.js/NestJS backends, and React Native iOS & Android apps shipped to millions of users.',
   icons: {
     icon: './favicon.ico',
   },
-  applicationName: 'Frontend Portfolio Template by Atzin Escandia',
+  applicationName: 'Habib Muhammad Sabir Portfolio',
   authors: [
     {
-      name: 'Atzin Escandia',
-      url: 'https://www.linkedin.com/in/atzin-escandia/',
+      name: 'Habib Muhammad Sabir',
+      url: 'https://www.linkedin.com/in/habib-muhammad-sabir-a61127166/',
     },
   ],
   generator: 'Next.js',
@@ -45,6 +44,6 @@ export const metadata: Metadata = {
   themeColor: '#120012',
   colorScheme: 'dark',
   viewport: 'width=device-width, initial-scale=1',
-  creator: 'Atzin Escandia',
-  publisher: 'Atzin Escandia',
+  creator: 'Habib Muhammad Sabir',
+  publisher: 'Habib Muhammad Sabir',
 };

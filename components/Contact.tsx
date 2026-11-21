@@ -1,5 +1,6 @@
 import Button from "./ui/Button";
 import Reveal from "./ui/Reveal";
+import { personalInfo } from "@/data";
 
 const Contact = () => {
   return (
@@ -12,19 +13,46 @@ const Contact = () => {
           </h2>
         </Reveal>
         <p className="max-w-[700px] mt-10">
-          {"Want more purple neon?"}
+          {"Have a project in mind or an opportunity to discuss? Let's talk."}
         </p>
         <p className="max-w-[700px] mt-10">
-          Download my <a
+          <a
+            className="text-purple font-extrabold hover:scale-105 inline-block transition-transform duration-200"
+            href={`mailto:${personalInfo.email}`}
+          >
+            {personalInfo.email}
+          </a>
+          {" | "}
+          <a
+            className="text-purple font-extrabold hover:scale-105 inline-block transition-transform duration-200"
+            href={personalInfo.phoneHref}
+          >
+            {personalInfo.phone}
+          </a>
+          {" | "}
+          {personalInfo.location}
+        </p>
+        <p className="max-w-[700px] mt-5">
+          <a
             className="text-purple font-extrabold hover:scale-105 inline-block transition-transform duration-200"
             target="_blank"
-            href="https://vscodethemes.com/e/atzinescandia.theplumup/theplumup/open?with=vscode"
+            rel="noopener noreferrer"
+            href={personalInfo.linkedin}
           >
-            VSCode theme
-          </a> for free!
+            LinkedIn
+          </a>
+          {" | "}
+          <a
+            className="text-purple font-extrabold hover:scale-105 inline-block transition-transform duration-200"
+            target="_blank"
+            rel="noopener noreferrer"
+            href={personalInfo.github}
+          >
+            GitHub
+          </a>
         </p>
 
-        <a className="mt-10" href="mailto:info@atzinescandia.dev">
+        <a className="mt-10" href={`mailto:${personalInfo.email}`}>
           <Button
             title="Let's connect"
             icon={<img src="assets/send.svg" />}

@@ -1,16 +1,17 @@
 "use client";
 
 import React from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, type MotionStyle } from "framer-motion";
 import { cn } from "@/lib/utils";
 import DownloadCV from "./DownloadCV";
 import { Socials } from "./Socials";
+import { personalInfo } from "@/data";
 
 const NAV_CONTAINER_CLASSES = cn(
   "flex fixed z-[5000] top-10 right-0 sm:gap-5 p-2 sm:px-5 sm:py-4 rounded-l-full border border-white/20"
 );
 
-const NAV_CONTAINER_STYLES: React.CSSProperties = {
+const NAV_CONTAINER_STYLES: MotionStyle = {
   backgroundColor: "rgba(255, 255, 255, 0.1)",
   backdropFilter: "blur(10px)",
 };
@@ -27,7 +28,7 @@ const FloatingBar = () => {
         style={NAV_CONTAINER_STYLES}
       >
         <Socials />
-        <DownloadCV fileUrl="assets/CV.pdf" fileName="Atzin-Escandia-CV.pdf" />
+        <DownloadCV fileUrl={personalInfo.cv.fileUrl} fileName={personalInfo.cv.fileName} />
       </motion.div>
     </AnimatePresence>
   );

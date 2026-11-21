@@ -1,4 +1,5 @@
 import { Socials } from "./ui/Socials";
+import { personalInfo } from "@/data";
 
 const Footer = () => {
   return (
@@ -14,23 +15,25 @@ const Footer = () => {
         <Socials />
         <div className="text-center my-10">
           <p className="mx-auto pt-5 sm:text-3xl">
-            ✷ Link to the  <a
+            ✷ More of my work on  <a
               className="text-purple font-extrabold hover:scale-105 inline-block transition-transform duration-200"
               target="_blank"
-              href="https://github.com/atzin-escandia/devfolio"
+              rel="noopener noreferrer"
+              href={personalInfo.github}
             >
-              github
-            </a> repository ✷
+              GitHub
+            </a> ✷
           </p>
-          <small>If you vibe with it, smash that star button! ⭐</small>
+          <small>{personalInfo.title} · {personalInfo.location}</small>
         </div>
         <p className="md:text-base text-sm md:font-normal font-light mt-5 opacity-60">
-          Crafted with ❤ by  <a
+          © {new Date().getFullYear()}  <a
             className="text-purple font-extrabold hover:scale-105 inline-block transition-transform duration-200"
             target="_blank"
-            href="https://atzinescandia.dev"
+            rel="noopener noreferrer"
+            href={personalInfo.linkedin}
           >
-            Atzin Escandia.
+            {personalInfo.name}.
           </a>
         </p>
       </div>
