@@ -15,7 +15,7 @@ export const personalInfo = {
 	phone: "+92 335 2253363",
 	phoneHref: "tel:+923352253363",
 	location: "Karachi, Pakistan",
-	linkedin: "https://www.linkedin.com/in/habib-muhammad-sabir-a61127166/",
+	linkedin: "https://www.linkedin.com/in/habib-muhammad-sabir-%E2%9C%AA-a61127166/",
 	github: "https://github.com/HabibSabir1998",
 	cv: {
 		fileUrl: "assets/CV.pdf",

@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: 'Habib Muhammad Sabir',
-      url: 'https://www.linkedin.com/in/habib-muhammad-sabir-a61127166/',
+      url: 'https://www.linkedin.com/in/habib-muhammad-sabir-%E2%9C%AA-a61127166/',
     },
   ],
   generator: 'Next.js',

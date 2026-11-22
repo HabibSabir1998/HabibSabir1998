@@ -2,7 +2,7 @@
 
 Personal portfolio of **Habib Muhammad Sabir**, Senior Full Stack Engineer (React/Next.js, Node.js/NestJS, React Native).
 
-- LinkedIn: https://www.linkedin.com/in/habib-muhammad-sabir-a61127166/
+- LinkedIn: https://www.linkedin.com/in/habib-muhammad-sabir-%E2%9C%AA-a61127166/
 - GitHub: https://github.com/HabibSabir1998
 
 ## Tech stack
