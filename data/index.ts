@@ -23,6 +23,15 @@ export const personalInfo = {
 	},
 };
 
+// Voice intro player in the hero. peaks = waveform bar heights (0–1)
+// computed from the audio file, so the waveform renders without decoding it.
+// If you replace intro.mp3, regenerate peaks to match.
+export const introAudio = {
+	src: "assets/intro.mp3",
+	label: "🎧 Hear my intro",
+	peaks: [0.85, 0.55, 0.6, 0.45, 0.1, 0.45, 0.4, 0.59, 0.49, 0.47, 0.29, 0.49, 0.48, 0.26, 0.12, 0.1, 0.74, 0.76, 0.23, 0.65, 1.0, 0.69, 0.57, 0.45, 0.52, 0.57, 0.38, 0.1, 0.78, 0.93, 0.47, 0.73, 0.63, 0.46, 0.52, 0.44, 0.1, 0.9, 0.66, 0.39, 0.88, 0.54, 0.59, 0.41, 0.71, 0.4, 0.1, 0.76, 0.49, 0.37, 0.58, 0.47, 0.13, 0.23, 0.7, 0.1, 0.53, 0.1, 0.85, 0.37, 0.68, 0.22, 0.1, 0.78, 0.62, 0.1, 0.38, 0.57, 0.45, 0.43, 0.22, 0.1],
+};
+
 export const about = [
 	"Senior Full Stack Engineer with 7+ years building scalable, production-grade React/Next.js web applications, Node.js/NestJS backends, and React Native iOS & Android apps — shipped to millions of users across fintech, live events, sports, and healthcare.",
 	"Strong backend expertise across REST APIs, WebSockets (Socket.io), and event-driven architectures. Experienced with PostgreSQL, MongoDB, MySQL, and Redis via TypeORM and Prisma. Containerizes with Docker, deploys on AWS, and automates via GitHub Actions CI/CD.",
