@@ -16,6 +16,8 @@ concurrency:
 
 jobs:
   build:
+    # Only deploy from the Pages repo; skip in the profile repo (HabibSabir1998/HabibSabir1998)
+    if: github.repository == 'HabibSabir1998/HabibSabir1998.github.io'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
