@@ -24,7 +24,7 @@ const Footer = () => {
               GitHub
             </a> ✷
           </p>
-          <small>{personalInfo.title} · {personalInfo.location}</small>
+          <small>{personalInfo.title}</small>
         </div>
         <p className="md:text-base text-sm md:font-normal font-light mt-5 opacity-60">
           © {new Date().getFullYear()}  <a
