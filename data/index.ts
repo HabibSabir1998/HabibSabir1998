@@ -2,6 +2,13 @@ export const personalInfo = {
 	name: "Habib Muhammad Sabir",
 	firstName: "Habib",
 	title: "Senior Full Stack Engineer",
+	// Hero heading types through these in order, then loops
+	roles: [
+		"Senior Full Stack Engineer",
+		"Mobile App Developer",
+		"Frontend Engineer",
+		"Senior React Native Engineer",
+	],
 	headline:
 		"7+ years building scalable, production-grade React/Next.js web apps, Node.js/NestJS backends, and React Native iOS & Android apps — shipped to millions of users across fintech, live events, sports, and healthcare.",
 	email: "habib.kasbati@gmail.com",

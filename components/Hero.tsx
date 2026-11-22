@@ -2,6 +2,7 @@ import Button from "./ui/Button";
 import Reveal from "./ui/Reveal";
 import { Spotlight } from "./ui/Spotlight";
 import { personalInfo } from "@/data";
+import Typewriter from "./ui/Typewriter";
 
 const Hero = () => {
   return (
@@ -27,7 +28,7 @@ const Hero = () => {
           </h1>
         </Reveal>
         <h2 className="title my-6 text-xl md:text-3xl lg:text-5xl">
-          I&apos;m a {personalInfo.title}
+          I&apos;m a <Typewriter words={personalInfo.roles} />
         </h2>
         <p className="max-w-[700px] mx-auto">
           {personalInfo.headline}
