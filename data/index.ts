@@ -336,11 +336,12 @@ export const projects = [
 	},
 ];
 
+// img values are the original template's animated backgrounds (cycled)
 export const mobileApps = [
 	{
 		id: 101,
+		img: "https://i.pinimg.com/originals/be/f4/1a/bef41a7d5a877841bbf7d8f9f0d42f14.gif",
 		title: "Koora Break",
-		img: "assets/projects/koora-break.webp",
 		description:
 			"Live sports scores with real-time updates, personalized feeds, push notifications, and iOS Live Activities for lock-screen match widgets.",
 		techs: ["React Native", "TypeScript", "RTK Query", "Live Activities", "Expo"],
@@ -349,8 +350,8 @@ export const mobileApps = [
 	},
 	{
 		id: 102,
+		img: "https://i.pinimg.com/originals/84/f6/d1/84f6d14f1f88d34d3956150d19060d3a.gif",
 		title: "Ring Magazine",
-		img: "assets/projects/ring-magazine-app.webp",
 		description:
 			"World’s most prestigious boxing publication app with live rankings, real-time scoring, fantasy league, and video streaming for millions of global fans.",
 		techs: ["React Native", "TypeScript", "Redux Toolkit", "Video Streaming"],
@@ -359,6 +360,7 @@ export const mobileApps = [
 	},
 	{
 		id: 103,
+		img: "https://i.pinimg.com/originals/54/b5/24/54b52468335fd6eb935e330eb3197b25.gif",
 		title: "Joy Awards",
 		description:
 			"Official app for Saudi Arabia’s premier entertainment awards serving millions of users with nominations, live results, voting, and media gallery.",
@@ -368,8 +370,8 @@ export const mobileApps = [
 	},
 	{
 		id: 104,
+		img: "https://i.pinimg.com/736x/c7/de/01/c7de016c811fa5fae9d7120402f27645.jpg",
 		title: "Riyadh Season",
-		img: "assets/projects/riyadh-season.webp",
 		description:
 			"Official app for Saudi Arabia’s largest entertainment festival with event discovery, ticketing, and in-app purchases for millions of attendees.",
 		techs: ["React Native", "TypeScript", "Redux Thunk", "In-App Purchases"],
@@ -378,6 +380,7 @@ export const mobileApps = [
 	},
 	{
 		id: 105,
+		img: "https://i.pinimg.com/736x/09/2e/25/092e252b5562c7e5eb576215c6d9db8d.jpg",
 		title: "EWC — Esports World Cup",
 		description:
 			"Official Esports World Cup app with tournament brackets, live leaderboards, team profiles, and integrated payments.",
@@ -387,8 +390,8 @@ export const mobileApps = [
 	},
 	{
 		id: 106,
+		img: "https://i.pinimg.com/originals/bf/c3/fb/bfc3fb764ff5f4d8d9ecb6da8544709c.gif",
 		title: "TNFS",
-		img: "assets/projects/tnfs.webp",
 		description:
 			"Health and wellness app with HealthKit/Google Fit biometric tracking, personalized insights, and full test coverage via Husky and SonarQube.",
 		techs: ["React Native", "TypeScript", "RTK Query", "Apple HealthKit", "Google Fit", "Sentry", "Jest"],
@@ -397,8 +400,8 @@ export const mobileApps = [
 	},
 	{
 		id: 107,
+		img: "https://i.pinimg.com/originals/be/f4/1a/bef41a7d5a877841bbf7d8f9f0d42f14.gif",
 		title: "Alinma Pay E-Wallet",
-		img: "assets/projects/alinma-pay.webp",
 		description:
 			"Saudi Arabia’s leading digital e-wallet with secure payments, money transfers, and real-time transaction tracking.",
 		techs: ["React Native", "TypeScript", "RTK Query", "Payments"],
@@ -407,8 +410,8 @@ export const mobileApps = [
 	},
 	{
 		id: 108,
+		img: "https://i.pinimg.com/originals/84/f6/d1/84f6d14f1f88d34d3956150d19060d3a.gif",
 		title: "Takaful Bazaar",
-		img: "assets/projects/takaful-bazaar.webp",
 		description:
 			"Pakistan’s leading Islamic fintech app with insurance purchases, OCR scanning, QR verification, and payment integrations.",
 		techs: ["React Native", "TypeScript", "Redux Toolkit", "OCR", "Payments"],
@@ -417,8 +420,8 @@ export const mobileApps = [
 	},
 	{
 		id: 109,
+		img: "https://i.pinimg.com/originals/54/b5/24/54b52468335fd6eb935e330eb3197b25.gif",
 		title: "Salaam Takaful",
-		img: "assets/projects/salaam-takaful.webp",
 		description:
 			"Telemedicine app with doctor booking, live video consultations via Agora, and real-time WebSocket notifications.",
 		techs: ["React Native", "TypeScript", "WebRTC", "WebSockets", "Agora"],
@@ -427,6 +430,7 @@ export const mobileApps = [
 	},
 	{
 		id: 110,
+		img: "https://i.pinimg.com/736x/c7/de/01/c7de016c811fa5fae9d7120402f27645.jpg",
 		title: "InPay",
 		description:
 			"Borderless P2P payment app with instant transfers, spending tracking, and real-time balance updates.",
@@ -436,6 +440,7 @@ export const mobileApps = [
 	},
 	{
 		id: 111,
+		img: "https://i.pinimg.com/736x/09/2e/25/092e252b5562c7e5eb576215c6d9db8d.jpg",
 		title: "Litt",
 		description:
 			"Social entertainment app with live video streaming, real-time chat, and push notification-driven engagement.",
@@ -445,6 +450,7 @@ export const mobileApps = [
 	},
 	{
 		id: 112,
+		img: "https://i.pinimg.com/originals/bf/c3/fb/bfc3fb764ff5f4d8d9ecb6da8544709c.gif",
 		title: "Levi’s",
 		description:
 			"Official Levi’s global retail app with product browsing, live chat, push campaigns, and checkout for millions of shoppers.",
@@ -454,6 +460,7 @@ export const mobileApps = [
 	},
 	{
 		id: 113,
+		img: "https://i.pinimg.com/originals/be/f4/1a/bef41a7d5a877841bbf7d8f9f0d42f14.gif",
 		title: "Sporti",
 		description:
 			"Sports community app with real-time location tracking, live chat, and activity discovery.",
@@ -462,6 +469,7 @@ export const mobileApps = [
 	},
 	{
 		id: 114,
+		img: "https://i.pinimg.com/originals/84/f6/d1/84f6d14f1f88d34d3956150d19060d3a.gif",
 		title: "Athlos",
 		description:
 			"Fitness and athletic training app with live streaming sessions and push-notification workout reminders.",
