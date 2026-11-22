@@ -17,7 +17,7 @@ const formatTime = (s: number) => {
   return `${m}:${sec.toString().padStart(2, "0")}`;
 };
 
-// Voice intro player: play/pause button + clickable waveform that fills as it plays.
+// Audio player: play/pause button + clickable waveform that fills as it plays.
 const AudioWave = ({ src, peaks, label }: AudioWaveProps) => {
   const audioRef = useRef<HTMLAudioElement>(null);
   const barsRef = useRef<HTMLDivElement>(null);
@@ -90,7 +90,7 @@ const AudioWave = ({ src, peaks, label }: AudioWaveProps) => {
         <button
           type="button"
           onClick={toggle}
-          aria-label={playing ? "Pause intro" : "Play intro"}
+          aria-label={playing ? "Pause song" : "Play song"}
           className="relative shrink-0 h-14 w-14 sm:h-16 sm:w-16 overflow-hidden rounded-full p-[2px] transition-transform duration-300 hover:scale-105 focus:outline-none"
         >
           <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,white_0%,purple_50%,#E2CBFF_100%)]" />
@@ -113,7 +113,7 @@ const AudioWave = ({ src, peaks, label }: AudioWaveProps) => {
             ref={barsRef}
             role="slider"
             tabIndex={0}
-            aria-label="Intro audio position"
+            aria-label="Song position"
             aria-valuemin={0}
             aria-valuemax={Math.round(duration)}
             aria-valuenow={Math.round(current)}

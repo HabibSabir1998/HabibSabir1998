@@ -1,7 +1,7 @@
 import Button from "./ui/Button";
 import Reveal from "./ui/Reveal";
 import { Spotlight } from "./ui/Spotlight";
-import { personalInfo, introAudio } from "@/data";
+import { personalInfo, heroSong } from "@/data";
 import AudioWave from "./ui/AudioWave";
 import Typewriter from "./ui/Typewriter";
 
@@ -41,7 +41,7 @@ const Hero = () => {
             position="right"
           />
         </a>
-        <AudioWave src={introAudio.src} peaks={introAudio.peaks} label={introAudio.label} />
+        <AudioWave src={heroSong.src} peaks={heroSong.peaks} />
       </div>
     </div>
   );
