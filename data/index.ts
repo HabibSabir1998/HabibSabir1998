@@ -167,6 +167,14 @@ export const showcase = [
 		link: "https://apps.apple.com/us/app/alinmapay-e-wallet/id1492900777",
 	},
 	{
+		title: "inPay",
+		category: "Fintech Website & Mobile Wallet",
+		img: "assets/projects/inpay.webp",
+		description: "Borderless payments with instant transfers, QR payments, biometric login and a live dashboard.",
+		techs: ["JavaScript", "PHP", "Laravel", "MySQL", "REST API", "Firebase", "Swift", "Kotlin"],
+		link: "https://apps.apple.com/am/app/inpay/id6741436449",
+	},
+	{
 		title: "Takaful Bazaar",
 		category: "Web & Mobile · Insurance",
 		img: "assets/projects/takaful-bazaar.webp",
@@ -236,10 +244,12 @@ export const showcase = [
 	},
 ];
 
-// Web projects (bento grid). className values keep the original grid layout.
+// Web projects (bento grid). className values keep the original grid layout;
+// img values are the original template's animated backgrounds.
 export const projects = [
 	{
 		id: 1,
+		img: "https://i.pinimg.com/originals/be/f4/1a/bef41a7d5a877841bbf7d8f9f0d42f14.gif",
 		title: "Joy Awards",
 		description:
 			"Official web platform for Saudi Arabia’s premier entertainment awards serving millions of visitors — multilingual SSR, real-time result reveals, Lighthouse score 93+ via SSR and edge caching.",
@@ -250,8 +260,8 @@ export const projects = [
 	},
 	{
 		id: 2,
+		img: "https://i.pinimg.com/originals/84/f6/d1/84f6d14f1f88d34d3956150d19060d3a.gif",
 		title: "The Ring Magazine",
-		img: "assets/projects/ring-magazine-web.webp",
 		description:
 			"World’s most prestigious boxing publication — live WebSocket scoring server, fantasy league with dynamic leaderboards, boosting session duration by 32% for millions of global fans.",
 		className: "lg:col-span-2 md:col-span-3 md:row-span-2",
@@ -261,6 +271,7 @@ export const projects = [
 	},
 	{
 		id: 3,
+		img: "https://i.pinimg.com/originals/54/b5/24/54b52468335fd6eb935e330eb3197b25.gif",
 		title: "Webook",
 		description:
 			"Saudi Arabia’s leading event ticketing platform — NestJS queue workers for high-concurrency booking, multi-gateway payments, seat selection UI optimization reducing drop-off by 25%.",
@@ -271,8 +282,8 @@ export const projects = [
 	},
 	{
 		id: 4,
+		img: "https://i.pinimg.com/736x/c7/de/01/c7de016c811fa5fae9d7120402f27645.jpg",
 		title: "Takaful Bazaar",
-		img: "assets/projects/takaful-bazaar.webp",
 		description:
 			"Full-stack fintech platform: Next.js user portal + admin CMS, NestJS/PostgreSQL APIs for policy, claims, and payments; OCR onboarding reducing friction by 45%.",
 		className: "lg:col-span-2 md:col-span-3 md:row-span-1",
@@ -282,8 +293,8 @@ export const projects = [
 	},
 	{
 		id: 5,
+		img: "https://i.pinimg.com/736x/09/2e/25/092e252b5562c7e5eb576215c6d9db8d.jpg",
 		title: "Salaam Takaful — Doctor Portal",
-		img: "assets/projects/salaam-takaful.webp",
 		description:
 			"Telemedicine portal with real-time WebSocket appointment availability and video consultation flows, reducing clinic call volume by 30%.",
 		className: "md:col-span-3 md:row-span-2",
@@ -293,8 +304,8 @@ export const projects = [
 	},
 	{
 		id: 6,
+		img: "https://i.pinimg.com/originals/bf/c3/fb/bfc3fb764ff5f4d8d9ecb6da8544709c.gif",
 		title: "Kontrax",
-		img: "assets/projects/mykontrax.webp",
 		description:
 			"Cloud document management SaaS with rich editor, NestJS e-signature workflows, RBAC, and audit trails — cut document processing time by 55%.",
 		className: "lg:col-span-2 md:col-span-3 md:row-span-1",
@@ -303,8 +314,8 @@ export const projects = [
 	},
 	{
 		id: 7,
+		img: "https://i.pinimg.com/originals/84/f6/d1/84f6d14f1f88d34d3956150d19060d3a.gif",
 		title: "Sagetap",
-		img: "assets/projects/sagetap.webp",
 		description:
 			"AI-powered B2B tech evaluation platform with recommendation engine via Node.js middleware — improved buyer-to-vendor conversion by 30%.",
 		className: "lg:col-span-2 md:col-span-3 md:row-span-1",
@@ -314,6 +325,7 @@ export const projects = [
 	},
 	{
 		id: 8,
+		img: "https://i.pinimg.com/736x/09/2e/25/092e252b5562c7e5eb576215c6d9db8d.jpg",
 		title: "Zaya Care",
 		description:
 			"US healthcare platform trusted by 100+ practices (NY & NJ) — provider onboarding, insurance verification, appointment booking; cut admin time by 40%.",
