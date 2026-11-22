@@ -28,7 +28,7 @@ const Hero = () => {
           </h1>
         </Reveal>
         <h2 className="title my-6 text-xl md:text-3xl lg:text-5xl">
-          I&apos;m a <Typewriter words={personalInfo.roles} />
+          <Typewriter prefix="I'm a " words={personalInfo.roles} />
         </h2>
         <p className="max-w-[700px] mx-auto">
           {personalInfo.headline}

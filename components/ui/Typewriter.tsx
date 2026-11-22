@@ -4,16 +4,20 @@ import { useEffect, useState } from "react";
 
 interface TypewriterProps {
   words: string[];
+  prefix?: string;
   typeSpeed?: number;
   deleteSpeed?: number;
   pauseMs?: number;
 }
 
 // Types each word, pauses, deletes it, then moves to the next (looping).
-// The longest word is rendered invisibly underneath to reserve space,
-// so the heading never changes height while typing.
+// The full line with the longest word is rendered invisibly in the same
+// grid cell to reserve height, so content below never jumps. Both layers
+// keep the parent's text alignment, so the typed line stays centered
+// with no gap after the prefix.
 const Typewriter = ({
   words,
+  prefix = "",
   typeSpeed = 80,
   deleteSpeed = 40,
   pauseMs = 1500,
@@ -56,16 +60,26 @@ const Typewriter = ({
   const longest = words.reduce((a, b) => (b.length > a.length ? b : a), "");
   const shown = reducedMotion ? words[0] : text;
 
+  const cursor = (
+    <span className="ml-1 inline-block w-[3px] h-[0.9em] align-middle bg-gradient-to-b from-purple to-red-700 animate-pulse" />
+  );
+
   return (
-    <span className="inline-grid align-top" aria-live="polite">
+    <span className="grid" aria-live="polite">
       <span className="invisible col-start-1 row-start-1" aria-hidden="true">
-        {longest}|
+        {prefix}
+        {longest}
+        {cursor}
       </span>
       <span className="col-start-1 row-start-1">
-        <span className="sr-only">{words[wordIndex % words.length]}</span>
+        <span className="sr-only">
+          {prefix}
+          {words[wordIndex % words.length]}
+        </span>
         <span aria-hidden="true">
+          {prefix}
           {shown}
-          <span className="ml-1 inline-block w-[3px] h-[0.9em] align-middle bg-gradient-to-b from-purple to-red-700 animate-pulse" />
+          {cursor}
         </span>
       </span>
     </span>
