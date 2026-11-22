@@ -44,3 +44,31 @@
      @apply text-sm sm:text-lg;
   }
 }
+
+/* Thin gradient scrollbar (used by the Featured work thumbnail strip) */
+/* Firefox only: Chrome ignores the ::-webkit-scrollbar gradient below if these are set */
+@supports not selector(::-webkit-scrollbar) {
+  .fancy-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #9B4D96 rgba(255, 255, 255, 0.05);
+  }
+}
+
+.fancy-scrollbar::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+.fancy-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 9999px;
+}
+
+.fancy-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #9B4D96, #b91c1c);
+  border-radius: 9999px;
+}
+
+.fancy-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(90deg, #b45fae, #dc2626);
+}

@@ -161,7 +161,7 @@ const ShowcaseCarousel = ({ items }: { items: ShowcaseItem[] }) => {
       </div>
 
       {/* Thumbnails */}
-      <div ref={thumbsRef} className="flex gap-3 overflow-x-auto pb-2 scroll-smooth">
+      <div ref={thumbsRef} className="fancy-scrollbar flex gap-3 overflow-x-auto pt-1 pb-3 scroll-smooth">
         {items.map((thumb, i) => (
           <button
             key={thumb.img}
