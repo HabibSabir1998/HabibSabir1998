@@ -29,8 +29,6 @@ const Contact = () => {
           >
             {personalInfo.phone}
           </a>
-          {" | "}
-          {personalInfo.location}
         </p>
         <p className="max-w-[700px] mt-5">
           <a

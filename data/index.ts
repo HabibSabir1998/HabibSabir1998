@@ -60,6 +60,12 @@ export const myTechStack = [
 	"Docker",
 	"AWS",
 	"GitHub Actions",
+	"Figma MCP",
+	"Maestro MCP",
+	"Claude",
+	"Gemini",
+	"OpenAI Codex",
+	"GitHub Copilot",
 ];
 
 export const skillGroups = [
@@ -118,6 +124,118 @@ export const skillGroups = [
 	},
 ];
 
+// Featured work carousel (Projects section). Images live in public/assets/projects/.
+export const showcase = [
+	{
+		title: "Koora Break",
+		category: "Mobile App · iOS & Android",
+		img: "assets/projects/koora-break.webp",
+		description: "Live football scores, leagues, match details and news with iOS Live Activities.",
+		techs: ["React Native", "Redux Toolkit", "NestJS"],
+		link: "https://apps.apple.com/us/app/koora-break-live-scores-news/id6456176348",
+	},
+	{
+		title: "The Ring Magazine",
+		category: "Web Platform",
+		img: "assets/projects/ring-magazine-web.webp",
+		description: "Boxing platform with live fight updates, rankings, schedules and fantasy boxing.",
+		techs: ["React", "Next.js", "Tailwind CSS", "shadcn/ui", "Redux Toolkit"],
+		link: "https://www.ringmagazine.com",
+	},
+	{
+		title: "Ring Magazine App",
+		category: "Mobile App · iOS & Android",
+		img: "assets/projects/ring-magazine-app.webp",
+		description: "Boxing news, fighter rankings, live events calendar and in-depth fighter stats.",
+		techs: ["React Native", "TypeScript", "Redux Toolkit"],
+		link: "https://apps.apple.com/us/app/ring-magazine/id1261206136",
+	},
+	{
+		title: "Riyadh Season",
+		category: "Web & Mobile",
+		img: "assets/projects/riyadh-season.webp",
+		description: "Event discovery, ticketing, bookings and an interactive zone map for millions of attendees.",
+		techs: ["React Native", "JavaScript (ES6)", "Node.js", "PostgreSQL"],
+		link: "https://apps.apple.com/pk/app/riyadh-season/id6467569767",
+	},
+	{
+		title: "Alinma Pay",
+		category: "Mobile App · Digital Wallet",
+		img: "assets/projects/alinma-pay.webp",
+		description: "Digital wallet with transfers, bill payments, QR payments and virtual cards.",
+		techs: ["React Native", "TypeScript", "Redux Toolkit", "Node.js", "NestJS", "Expo"],
+		link: "https://apps.apple.com/us/app/alinmapay-e-wallet/id1492900777",
+	},
+	{
+		title: "Takaful Bazaar",
+		category: "Web & Mobile · Insurance",
+		img: "assets/projects/takaful-bazaar.webp",
+		description: "Islamic insurance platform to compare plans and buy auto, travel, health and home cover.",
+		techs: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Redux Toolkit", "Node.js", "PostgreSQL"],
+		link: "https://takafulbazaar.pk",
+	},
+	{
+		title: "Salaam Takaful Virtual Clinic",
+		category: "Web & Mobile · Healthcare",
+		img: "assets/projects/salaam-takaful.webp",
+		description: "Online doctor consultations, appointments, medical records and digital prescriptions.",
+		techs: ["React", "Next.js", "React Native", "NestJS", "PostgreSQL", "AWS"],
+		link: "https://online.salaamtakaful.com",
+	},
+	{
+		title: "TNFS",
+		category: "Mobile App · Health",
+		img: "assets/projects/tnfs.webp",
+		description: "Quit-smoking companion with Apple Health & Google Fit tracking, streaks and insights.",
+		techs: ["React Native (Expo)", "Redux Toolkit", "PostgreSQL", "NestJS"],
+		link: "https://apps.apple.com/us/app/tnfs/id6739621897",
+	},
+	{
+		title: "MyKontrax",
+		category: "Web & Mobile · AI SaaS",
+		img: "assets/projects/mykontrax.webp",
+		description: "AI-powered contract lifecycle management with AI agents, smart search and workflows.",
+		techs: ["React", "Next.js", "Node.js", "MongoDB", "Redis", "Socket.IO", "LLM"],
+		link: "https://mykontrax.com",
+	},
+	{
+		title: "SageTap",
+		category: "Web & Mobile · AI Platform",
+		img: "assets/projects/sagetap.webp",
+		description: "AI orchestration platform to build and monitor LLM workflows across providers.",
+		techs: ["React", "Next.js", "Node.js", "PostgreSQL", "LangChain", "LLM"],
+		link: "https://www.sagetap.io",
+	},
+	{
+		title: "Think Fitness Life",
+		category: "Mobile App · Fitness",
+		img: "assets/projects/think-fitness-life.webp",
+		description: "Fitness companion for workouts, goals, progress and health tracking.",
+		techs: ["React Native", "Node.js", "Express", "PostgreSQL", "Firebase"],
+	},
+	{
+		title: "Shifaam",
+		category: "Web & Mobile · Healthcare",
+		img: "assets/projects/shifaam.webp",
+		description: "Find doctors, book appointments and lab tests, order medicines and consult online.",
+		techs: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Node.js", "PostgreSQL", "MongoDB"],
+	},
+	{
+		title: "OAKS",
+		category: "Web & Mobile · E-commerce",
+		img: "assets/projects/oaks.webp",
+		description: "Fashion e-commerce with search, wishlists, order tracking and secure checkout.",
+		techs: ["Next.js", "React", "Node.js", "TypeScript", "PostgreSQL", "MongoDB", "Stripe"],
+	},
+	{
+		title: "Valai",
+		category: "Business Website",
+		img: "assets/projects/valai.webp",
+		description: "Fast, SEO-optimized business website and digital platform.",
+		techs: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Node.js"],
+	},
+];
+
 // Web projects (bento grid). className values keep the original grid layout.
 export const projects = [
 	{
@@ -133,6 +251,7 @@ export const projects = [
 	{
 		id: 2,
 		title: "The Ring Magazine",
+		img: "assets/projects/ring-magazine-web.webp",
 		description:
 			"World’s most prestigious boxing publication — live WebSocket scoring server, fantasy league with dynamic leaderboards, boosting session duration by 32% for millions of global fans.",
 		className: "lg:col-span-2 md:col-span-3 md:row-span-2",
@@ -153,6 +272,7 @@ export const projects = [
 	{
 		id: 4,
 		title: "Takaful Bazaar",
+		img: "assets/projects/takaful-bazaar.webp",
 		description:
 			"Full-stack fintech platform: Next.js user portal + admin CMS, NestJS/PostgreSQL APIs for policy, claims, and payments; OCR onboarding reducing friction by 45%.",
 		className: "lg:col-span-2 md:col-span-3 md:row-span-1",
@@ -163,6 +283,7 @@ export const projects = [
 	{
 		id: 5,
 		title: "Salaam Takaful — Doctor Portal",
+		img: "assets/projects/salaam-takaful.webp",
 		description:
 			"Telemedicine portal with real-time WebSocket appointment availability and video consultation flows, reducing clinic call volume by 30%.",
 		className: "md:col-span-3 md:row-span-2",
@@ -173,6 +294,7 @@ export const projects = [
 	{
 		id: 6,
 		title: "Kontrax",
+		img: "assets/projects/mykontrax.webp",
 		description:
 			"Cloud document management SaaS with rich editor, NestJS e-signature workflows, RBAC, and audit trails — cut document processing time by 55%.",
 		className: "lg:col-span-2 md:col-span-3 md:row-span-1",
@@ -182,6 +304,7 @@ export const projects = [
 	{
 		id: 7,
 		title: "Sagetap",
+		img: "assets/projects/sagetap.webp",
 		description:
 			"AI-powered B2B tech evaluation platform with recommendation engine via Node.js middleware — improved buyer-to-vendor conversion by 30%.",
 		className: "lg:col-span-2 md:col-span-3 md:row-span-1",
@@ -205,6 +328,7 @@ export const mobileApps = [
 	{
 		id: 101,
 		title: "Koora Break",
+		img: "assets/projects/koora-break.webp",
 		description:
 			"Live sports scores with real-time updates, personalized feeds, push notifications, and iOS Live Activities for lock-screen match widgets.",
 		techs: ["React Native", "TypeScript", "RTK Query", "Live Activities", "Expo"],
@@ -214,6 +338,7 @@ export const mobileApps = [
 	{
 		id: 102,
 		title: "Ring Magazine",
+		img: "assets/projects/ring-magazine-app.webp",
 		description:
 			"World’s most prestigious boxing publication app with live rankings, real-time scoring, fantasy league, and video streaming for millions of global fans.",
 		techs: ["React Native", "TypeScript", "Redux Toolkit", "Video Streaming"],
@@ -232,6 +357,7 @@ export const mobileApps = [
 	{
 		id: 104,
 		title: "Riyadh Season",
+		img: "assets/projects/riyadh-season.webp",
 		description:
 			"Official app for Saudi Arabia’s largest entertainment festival with event discovery, ticketing, and in-app purchases for millions of attendees.",
 		techs: ["React Native", "TypeScript", "Redux Thunk", "In-App Purchases"],
@@ -250,6 +376,7 @@ export const mobileApps = [
 	{
 		id: 106,
 		title: "TNFS",
+		img: "assets/projects/tnfs.webp",
 		description:
 			"Health and wellness app with HealthKit/Google Fit biometric tracking, personalized insights, and full test coverage via Husky and SonarQube.",
 		techs: ["React Native", "TypeScript", "RTK Query", "Apple HealthKit", "Google Fit", "Sentry", "Jest"],
@@ -259,6 +386,7 @@ export const mobileApps = [
 	{
 		id: 107,
 		title: "Alinma Pay E-Wallet",
+		img: "assets/projects/alinma-pay.webp",
 		description:
 			"Saudi Arabia’s leading digital e-wallet with secure payments, money transfers, and real-time transaction tracking.",
 		techs: ["React Native", "TypeScript", "RTK Query", "Payments"],
@@ -268,6 +396,7 @@ export const mobileApps = [
 	{
 		id: 108,
 		title: "Takaful Bazaar",
+		img: "assets/projects/takaful-bazaar.webp",
 		description:
 			"Pakistan’s leading Islamic fintech app with insurance purchases, OCR scanning, QR verification, and payment integrations.",
 		techs: ["React Native", "TypeScript", "Redux Toolkit", "OCR", "Payments"],
@@ -277,6 +406,7 @@ export const mobileApps = [
 	{
 		id: 109,
 		title: "Salaam Takaful",
+		img: "assets/projects/salaam-takaful.webp",
 		description:
 			"Telemedicine app with doctor booking, live video consultations via Agora, and real-time WebSocket notifications.",
 		techs: ["React Native", "TypeScript", "WebRTC", "WebSockets", "Agora"],

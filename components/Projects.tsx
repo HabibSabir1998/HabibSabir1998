@@ -1,12 +1,24 @@
 "use client";
 
-import { projects, mobileApps } from "@/data";
+import { projects, mobileApps, showcase } from "@/data";
+import ShowcaseCarousel from "./ui/ShowcaseCarousel";
 import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 import Reveal from "./ui/Reveal";
 
 const Projects = () => {
   return (
     <section id="projects" className="py-20">
+      <Reveal>
+        <h3>
+          Featured{" "}
+          <span className="bg-gradient-to-r from-purple to-red-700 bg-clip-text text-transparent">
+            work.</span>
+        </h3>
+      </Reveal>
+      <div className="w-full py-20">
+        <ShowcaseCarousel items={showcase} />
+      </div>
+
       <Reveal>
          <h3>
           Recent{" "}
