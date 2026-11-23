@@ -10,7 +10,7 @@ export const personalInfo = {
 		"Senior React Native Engineer",
 	],
 	headline:
-		"7+ years building scalable, production-grade React/Next.js web apps, Node.js/NestJS backends, and React Native iOS & Android apps — shipped to millions of users across fintech, live events, sports, and healthcare.",
+		"7+ years building scalable, production-grade React/Next.js web apps, Node.js/NestJS backends, and React Native iOS & Android apps shipped to millions of users across fintech, live events, sports, and healthcare.",
 	email: "habib.kasbati@gmail.com",
 	phone: "+92 335 2253363",
 	phoneHref: "tel:+923352253363",
@@ -33,9 +33,9 @@ export const introAudio = {
 };
 
 export const about = [
-	"Senior Full Stack Engineer with 7+ years building scalable, production-grade React/Next.js web applications, Node.js/NestJS backends, and React Native iOS & Android apps — shipped to millions of users across fintech, live events, sports, and healthcare.",
+	"Senior Full Stack Engineer with 7+ years building scalable, production-grade React/Next.js web applications, Node.js/NestJS backends, and React Native iOS & Android apps shipped to millions of users across fintech, live events, sports, and healthcare.",
 	"Strong backend expertise across REST APIs, WebSockets (Socket.io), and event-driven architectures. Experienced with PostgreSQL, MongoDB, MySQL, and Redis via TypeORM and Prisma. Containerizes with Docker, deploys on AWS, and automates via GitHub Actions CI/CD.",
-	"Pioneered AI-powered dev workflows with Figma MCP and Maestro MCP. Delivers full product ownership — from system design to store submission — across every platform.",
+	"Pioneered AI-powered dev workflows with Figma MCP and Maestro MCP. Delivers full product ownership from system design to store submission across every platform.",
 ];
 
 export const navItems = [
