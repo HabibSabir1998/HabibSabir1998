@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     template: '%s - Habib Muhammad Sabir',
   },
   description:
-    'Habib Muhammad Sabir — Senior Full Stack Engineer with 7+ years building React/Next.js web apps, Node.js/NestJS backends, and React Native iOS & Android apps shipped to millions of users.',
+    'Habib Muhammad Sabir — Senior Full Stack Engineer with 8+ years building React/Next.js web apps, Node.js/NestJS backends, and React Native iOS & Android apps shipped to millions of users.',
   icons: {
     icon: './favicon.ico',
   },
